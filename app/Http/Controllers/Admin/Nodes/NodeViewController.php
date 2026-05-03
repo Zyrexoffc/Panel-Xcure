@@ -1,18 +1,18 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Admin\Nodes;
+namespace Xcure\Http\Controllers\Admin\Nodes;
 
 use Illuminate\View\View;
 use Illuminate\Http\Request;
-use Pterodactyl\Models\Node;
+use Xcure\Models\Node;
 use Illuminate\Support\Collection;
-use Pterodactyl\Models\Allocation;
-use Pterodactyl\Http\Controllers\Controller;
-use Pterodactyl\Repositories\Eloquent\NodeRepository;
-use Pterodactyl\Repositories\Eloquent\ServerRepository;
-use Pterodactyl\Traits\Controllers\JavascriptInjection;
-use Pterodactyl\Services\Helpers\SoftwareVersionService;
-use Pterodactyl\Repositories\Eloquent\LocationRepository;
+use Xcure\Models\Allocation;
+use Xcure\Http\Controllers\Controller;
+use Xcure\Repositories\Eloquent\NodeRepository;
+use Xcure\Repositories\Eloquent\ServerRepository;
+use Xcure\Traits\Controllers\JavascriptInjection;
+use Xcure\Services\Helpers\SoftwareVersionService;
+use Xcure\Repositories\Eloquent\LocationRepository;
 
 class NodeViewController extends Controller
 {

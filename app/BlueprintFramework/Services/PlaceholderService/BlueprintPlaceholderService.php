@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\BlueprintFramework\Services\PlaceholderService;
+namespace Xcure\BlueprintFramework\Services\PlaceholderService;
 
 class BlueprintPlaceholderService
 {

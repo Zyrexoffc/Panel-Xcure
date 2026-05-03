@@ -22,7 +22,7 @@
 
 @section("extension.config")
   <?php
-    use Pterodactyl\Models\Egg;
+    use Xcure\Models\Egg;
     $eggs = Egg::all();
   ?>
   <div class="modal fade" id="extensionConfigModal" tabindex="-1" role="dialog">
@@ -39,7 +39,7 @@
 
           <div class="modal-body" style="border-color:transparent; border-radius:7px; margin-bottom: 15px">
             <h4><b>Permissions</b></h4>
-            <p class="text-muted text-left">Configure what elements this extension can or can't edit/extend on your Pterodactyl panel.</p><br>
+            <p class="text-muted text-left">Configure what elements this extension can or can't edit/extend on your Xcure panel.</p><br>
 
             <div class="row">
               <div class="col-xs-6">
@@ -69,7 +69,7 @@
                     <option value="{{ $egg->id }}" @if(in_array(strval($egg->id), json_decode($blueprint->dbGet('blueprint', 'extensionconfig_'.$EXTENSION_ID.'_eggs') ?: '["-1"]'))) selected @endif>{{ $egg->name }}</option>
                   @endforeach
                 </select>
-                <p class="text-muted small">Choose on which Pterodactyl eggs this extension should be able to add new pages on.</p>
+                <p class="text-muted small">Choose on which Xcure eggs this extension should be able to add new pages on.</p>
               </div>
             </div>
           </div>

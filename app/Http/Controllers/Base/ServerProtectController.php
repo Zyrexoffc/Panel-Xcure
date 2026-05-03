@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Base;
+namespace Xcure\Http\Controllers\Base;
 
 use Illuminate\Http\Request;
-use Pterodactyl\Http\Controllers\Controller;
-use Pterodactyl\Models\Server;
+use Xcure\Http\Controllers\Controller;
+use Xcure\Models\Server;
 
 class ServerProtectController extends Controller
 {

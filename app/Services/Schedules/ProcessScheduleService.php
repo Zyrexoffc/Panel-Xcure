@@ -1,15 +1,15 @@
 <?php
 
-namespace Pterodactyl\Services\Schedules;
+namespace Xcure\Services\Schedules;
 
 use Exception;
-use Pterodactyl\Models\Schedule;
+use Xcure\Models\Schedule;
 use Illuminate\Contracts\Bus\Dispatcher;
-use Pterodactyl\Jobs\Schedule\RunTaskJob;
+use Xcure\Jobs\Schedule\RunTaskJob;
 use Illuminate\Database\ConnectionInterface;
-use Pterodactyl\Exceptions\DisplayException;
-use Pterodactyl\Repositories\Wings\DaemonServerRepository;
-use Pterodactyl\Exceptions\Http\Connection\DaemonConnectionException;
+use Xcure\Exceptions\DisplayException;
+use Xcure\Repositories\Wings\DaemonServerRepository;
+use Xcure\Exceptions\Http\Connection\DaemonConnectionException;
 
 class ProcessScheduleService
 {

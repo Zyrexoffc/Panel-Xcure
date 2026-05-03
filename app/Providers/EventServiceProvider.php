@@ -1,20 +1,20 @@
 <?php
 
-namespace Pterodactyl\Providers;
+namespace Xcure\Providers;
 
-use Pterodactyl\Models\User;
-use Pterodactyl\Models\Server;
-use Pterodactyl\Models\Subuser;
-use Pterodactyl\Models\EggVariable;
-use Pterodactyl\Observers\UserObserver;
-use Pterodactyl\Observers\ServerObserver;
-use Pterodactyl\Observers\SubuserObserver;
-use Pterodactyl\Listeners\TwoFactorListener;
-use Pterodactyl\Listeners\RevocationListener;
-use Pterodactyl\Observers\EggVariableObserver;
-use Pterodactyl\Listeners\AuthenticationListener;
-use Pterodactyl\Events\Server\Installed as ServerInstalledEvent;
-use Pterodactyl\Notifications\ServerInstalled as ServerInstalledNotification;
+use Xcure\Models\User;
+use Xcure\Models\Server;
+use Xcure\Models\Subuser;
+use Xcure\Models\EggVariable;
+use Xcure\Observers\UserObserver;
+use Xcure\Observers\ServerObserver;
+use Xcure\Observers\SubuserObserver;
+use Xcure\Listeners\TwoFactorListener;
+use Xcure\Listeners\RevocationListener;
+use Xcure\Observers\EggVariableObserver;
+use Xcure\Listeners\AuthenticationListener;
+use Xcure\Events\Server\Installed as ServerInstalledEvent;
+use Xcure\Notifications\ServerInstalled as ServerInstalledNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

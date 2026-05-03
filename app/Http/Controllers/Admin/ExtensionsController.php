@@ -1,14 +1,14 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Admin;
+namespace Xcure\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\View\View;
 use Illuminate\View\Factory as ViewFactory;
-use Pterodactyl\Http\Controllers\Controller;
-use Pterodactyl\Services\Helpers\SoftwareVersionService;
-use Pterodactyl\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Admin\BlueprintAdminLibrary as BlueprintExtensionLibrary;
+use Xcure\Http\Controllers\Controller;
+use Xcure\Services\Helpers\SoftwareVersionService;
+use Xcure\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Admin\BlueprintAdminLibrary as BlueprintExtensionLibrary;
 use Database\Seeders\BlueprintSeeder;
 
 class ExtensionsController extends Controller

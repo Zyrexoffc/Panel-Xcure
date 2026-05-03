@@ -1,17 +1,17 @@
 <?php
 
-namespace Pterodactyl\Services\Backups;
+namespace Xcure\Services\Backups;
 
 use Ramsey\Uuid\Uuid;
 use Carbon\CarbonImmutable;
 use Webmozart\Assert\Assert;
-use Pterodactyl\Models\Backup;
-use Pterodactyl\Models\Server;
+use Xcure\Models\Backup;
+use Xcure\Models\Server;
 use Illuminate\Database\ConnectionInterface;
-use Pterodactyl\Extensions\Backups\BackupManager;
-use Pterodactyl\Repositories\Eloquent\BackupRepository;
-use Pterodactyl\Repositories\Wings\DaemonBackupRepository;
-use Pterodactyl\Exceptions\Service\Backup\TooManyBackupsException;
+use Xcure\Extensions\Backups\BackupManager;
+use Xcure\Repositories\Eloquent\BackupRepository;
+use Xcure\Repositories\Wings\DaemonBackupRepository;
+use Xcure\Exceptions\Service\Backup\TooManyBackupsException;
 use Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException;
 
 class InitiateBackupService

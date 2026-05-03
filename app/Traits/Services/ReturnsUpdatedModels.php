@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\Traits\Services;
+namespace Xcure\Traits\Services;
 
 trait ReturnsUpdatedModels
 {

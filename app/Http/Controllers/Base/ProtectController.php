@@ -1,9 +1,9 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Base;
+namespace Xcure\Http\Controllers\Base;
 
 use Illuminate\Http\Request;
-use Pterodactyl\Http\Controllers\Controller;
+use Xcure\Http\Controllers\Controller;
 
 class ProtectController extends Controller
 {

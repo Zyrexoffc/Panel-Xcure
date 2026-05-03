@@ -1,11 +1,11 @@
 <?php
 
-namespace Pterodactyl\Repositories\Eloquent;
+namespace Xcure\Repositories\Eloquent;
 
-use Pterodactyl\Models\Nest;
+use Xcure\Models\Nest;
 use Illuminate\Database\Eloquent\Collection;
-use Pterodactyl\Contracts\Repository\NestRepositoryInterface;
-use Pterodactyl\Exceptions\Repository\RecordNotFoundException;
+use Xcure\Contracts\Repository\NestRepositoryInterface;
+use Xcure\Exceptions\Repository\RecordNotFoundException;
 
 class NestRepository extends EloquentRepository implements NestRepositoryInterface
 {
@@ -20,7 +20,7 @@ class NestRepository extends EloquentRepository implements NestRepositoryInterfa
     /**
      * Return a nest or all nests with their associated eggs and variables.
      *
-     * @return \Illuminate\Database\Eloquent\Collection<int, \Pterodactyl\Models\Nest>|\Pterodactyl\Models\Nest
+     * @return \Illuminate\Database\Eloquent\Collection<int, \Xcure\Models\Nest>|\Xcure\Models\Nest
      *
      * @throws RecordNotFoundException
      */
@@ -43,7 +43,7 @@ class NestRepository extends EloquentRepository implements NestRepositoryInterfa
     /**
      * Return a nest or all nests and the count of eggs and servers for that nest.
      *
-     * @return \Illuminate\Database\Eloquent\Collection<int, \Pterodactyl\Models\Nest>|\Pterodactyl\Models\Nest
+     * @return \Illuminate\Database\Eloquent\Collection<int, \Xcure\Models\Nest>|\Xcure\Models\Nest
      *
      * @throws RecordNotFoundException
      */

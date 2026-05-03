@@ -12,9 +12,9 @@
  * @since      alpha
  */
 
-namespace Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Client;
+namespace Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Client;
 
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\BlueprintBaseLibrary;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\BlueprintBaseLibrary;
 
 class BlueprintClientLibrary extends BlueprintBaseLibrary
 {

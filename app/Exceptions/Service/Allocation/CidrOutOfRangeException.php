@@ -1,8 +1,8 @@
 <?php
 
-namespace Pterodactyl\Exceptions\Service\Allocation;
+namespace Xcure\Exceptions\Service\Allocation;
 
-use Pterodactyl\Exceptions\DisplayException;
+use Xcure\Exceptions\DisplayException;
 
 class CidrOutOfRangeException extends DisplayException
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Providers\Blueprint;
+namespace Xcure\Providers\Blueprint;
 
 use Illuminate\Support\Facades\Route;
-use Pterodactyl\Http\Middleware\AdminAuthenticate;
-use Pterodactyl\Http\Middleware\RequireTwoFactorAuthentication;
+use Xcure\Http\Middleware\AdminAuthenticate;
+use Xcure\Http\Middleware\RequireTwoFactorAuthentication;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider

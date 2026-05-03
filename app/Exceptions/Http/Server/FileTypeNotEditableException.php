@@ -1,8 +1,8 @@
 <?php
 
-namespace Pterodactyl\Exceptions\Http\Server;
+namespace Xcure\Exceptions\Http\Server;
 
-use Pterodactyl\Exceptions\DisplayException;
+use Xcure\Exceptions\DisplayException;
 
 class FileTypeNotEditableException extends DisplayException
 {

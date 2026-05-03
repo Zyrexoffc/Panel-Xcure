@@ -1,12 +1,12 @@
 <?php
 
-namespace Pterodactyl\Services\Deployment;
+namespace Xcure\Services\Deployment;
 
-use Pterodactyl\Models\Allocation;
-use Pterodactyl\Exceptions\DisplayException;
-use Pterodactyl\Services\Allocations\AssignmentService;
-use Pterodactyl\Contracts\Repository\AllocationRepositoryInterface;
-use Pterodactyl\Exceptions\Service\Deployment\NoViableAllocationException;
+use Xcure\Models\Allocation;
+use Xcure\Exceptions\DisplayException;
+use Xcure\Services\Allocations\AssignmentService;
+use Xcure\Contracts\Repository\AllocationRepositoryInterface;
+use Xcure\Exceptions\Service\Deployment\NoViableAllocationException;
 
 class AllocationSelectionService
 {

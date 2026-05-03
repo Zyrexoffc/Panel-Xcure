@@ -1,8 +1,8 @@
 <?php
 
-namespace Pterodactyl\Http\Requests\Admin;
+namespace Xcure\Http\Requests\Admin;
 
-use Pterodactyl\Models\Server;
+use Xcure\Models\Server;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Validator;
 

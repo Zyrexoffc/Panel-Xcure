@@ -1,11 +1,11 @@
 <?php
 
-namespace Pterodactyl\Http\Middleware;
+namespace Xcure\Http\Middleware;
 
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Prologue\Alerts\AlertsMessageBag;
-use Pterodactyl\Exceptions\Http\TwoFactorAuthRequiredException;
+use Xcure\Exceptions\Http\TwoFactorAuthRequiredException;
 
 class RequireTwoFactorAuthentication
 {

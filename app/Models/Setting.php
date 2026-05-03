@@ -1,9 +1,9 @@
 <?php
 
-namespace Pterodactyl\Models;
+namespace Xcure\Models;
 
 /**
- * Pterodactyl\Models\Setting.
+ * Xcure\Models\Setting.
  *
  * @property int $id
  * @property string $key

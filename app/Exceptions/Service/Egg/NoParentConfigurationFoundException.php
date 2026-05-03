@@ -1,8 +1,8 @@
 <?php
 
-namespace Pterodactyl\Exceptions\Service\Egg;
+namespace Xcure\Exceptions\Service\Egg;
 
-use Pterodactyl\Exceptions\DisplayException;
+use Xcure\Exceptions\DisplayException;
 
 class NoParentConfigurationFoundException extends DisplayException
 {

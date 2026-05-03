@@ -1,7 +1,7 @@
 <?php
 
-namespace Pterodactyl\Exceptions;
+namespace Xcure\Exceptions;
 
-class PterodactylException extends \Exception
+class XcureException extends \Exception
 {
 }

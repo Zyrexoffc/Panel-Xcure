@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Console\Commands\BlueprintFramework;
+namespace Xcure\Console\Commands\BlueprintFramework;
 
 use Illuminate\Console\Command;
 use Symfony\Component\VarDumper\VarDumper;
-use Pterodactyl\Services\Telemetry\BlueprintTelemetryCollectionService;
+use Xcure\Services\Telemetry\BlueprintTelemetryCollectionService;
 
 class TelemetryCommand extends Command
 {

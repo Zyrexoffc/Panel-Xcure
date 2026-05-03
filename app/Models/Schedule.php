@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\Models;
+namespace Xcure\Models;
 
 use Cron\CronExpression;
 use Carbon\CarbonImmutable;
@@ -8,7 +8,7 @@ use Illuminate\Container\Container;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Pterodactyl\Contracts\Extensions\HashidsInterface;
+use Xcure\Contracts\Extensions\HashidsInterface;
 
 /**
  * @property int $id
@@ -28,7 +28,7 @@ use Pterodactyl\Contracts\Extensions\HashidsInterface;
  * @property \Carbon\Carbon $updated_at
  * @property string $hashid
  * @property Server $server
- * @property \Illuminate\Database\Eloquent\Collection<int, \Pterodactyl\Models\Task> $tasks
+ * @property \Illuminate\Database\Eloquent\Collection<int, \Xcure\Models\Task> $tasks
  */
 class Schedule extends Model
 {
@@ -134,7 +134,7 @@ class Schedule extends Model
     /**
      * Return tasks belonging to a schedule.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Pterodactyl\Models\Task, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Xcure\Models\Task, $this>
      */
     public function tasks(): HasMany
     {
@@ -144,7 +144,7 @@ class Schedule extends Model
     /**
      * Return the server model that a schedule belongs to.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Pterodactyl\Models\Server, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Xcure\Models\Server, $this>
      */
     public function server(): BelongsTo
     {

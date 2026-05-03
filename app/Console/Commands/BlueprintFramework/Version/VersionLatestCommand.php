@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Console\Commands\BlueprintFramework\Version;
+namespace Xcure\Console\Commands\BlueprintFramework\Version;
 
 use Illuminate\Console\Command;
-use Pterodactyl\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
+use Xcure\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
 
 class VersionLatestCommand extends Command
 {

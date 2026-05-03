@@ -1,12 +1,12 @@
 <?php
 
-namespace Pterodactyl\Services\Telemetry;
+namespace Xcure\Services\Telemetry;
 
 use Ramsey\Uuid\Uuid;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
-use Pterodactyl\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
+use Xcure\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
 use Database\Seeders\BlueprintSeeder;
 
 class BlueprintTelemetryCollectionService
@@ -38,7 +38,7 @@ class BlueprintTelemetryCollectionService
   /**
    * Collects telemetry data and returns it as an array.
    *
-   * @throws \Pterodactyl\Exceptions\Model\DataValidationException
+   * @throws \Xcure\Exceptions\Model\DataValidationException
    */
   public function collect(): array
   {

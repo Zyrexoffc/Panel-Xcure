@@ -1,11 +1,11 @@
 <?php
 
-namespace Pterodactyl\Services\Users;
+namespace Xcure\Services\Users;
 
-use Pterodactyl\Models\User;
+use Xcure\Models\User;
 use Illuminate\Contracts\Hashing\Hasher;
-use Pterodactyl\Events\User\PasswordChanged;
-use Pterodactyl\Traits\Services\HasUserLevels;
+use Xcure\Events\User\PasswordChanged;
+use Xcure\Traits\Services\HasUserLevels;
 
 class UserUpdateService
 {

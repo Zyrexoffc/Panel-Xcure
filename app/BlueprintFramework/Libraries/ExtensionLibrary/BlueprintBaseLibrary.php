@@ -12,7 +12,7 @@
  * @since      alpha
  */
 
-namespace Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary;
+namespace Xcure\BlueprintFramework\Libraries\ExtensionLibrary;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Collection;

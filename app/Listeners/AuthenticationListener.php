@@ -1,13 +1,13 @@
 <?php
 
-namespace Pterodactyl\Listeners;
+namespace Xcure\Listeners;
 
-use Pterodactyl\Facades\Activity;
+use Xcure\Facades\Activity;
 use Illuminate\Auth\Events\Failed;
-use Pterodactyl\Events\Auth\DirectLogin;
+use Xcure\Events\Auth\DirectLogin;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Contracts\Events\Dispatcher;
-use Pterodactyl\Extensions\Illuminate\Events\Contracts\SubscribesToEvents;
+use Xcure\Extensions\Illuminate\Events\Contracts\SubscribesToEvents;
 
 class AuthenticationListener implements SubscribesToEvents
 {

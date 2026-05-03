@@ -1,11 +1,11 @@
 <?php
 
-namespace Pterodactyl\Services\Locations;
+namespace Xcure\Services\Locations;
 
-use Pterodactyl\Models\Location;
-use Pterodactyl\Contracts\Repository\NodeRepositoryInterface;
-use Pterodactyl\Contracts\Repository\LocationRepositoryInterface;
-use Pterodactyl\Exceptions\Service\Location\HasActiveNodesException;
+use Xcure\Models\Location;
+use Xcure\Contracts\Repository\NodeRepositoryInterface;
+use Xcure\Contracts\Repository\LocationRepositoryInterface;
+use Xcure\Exceptions\Service\Location\HasActiveNodesException;
 
 class LocationDeletionService
 {

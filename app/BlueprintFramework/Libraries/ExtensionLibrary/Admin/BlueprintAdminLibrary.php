@@ -12,9 +12,9 @@
  * @since      alpha
  */
 
-namespace Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Admin;
+namespace Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Admin;
 
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\BlueprintBaseLibrary;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\BlueprintBaseLibrary;
 use Prologue\Alerts\Facades\Alert;
 
 class BlueprintAdminLibrary extends BlueprintBaseLibrary
@@ -78,7 +78,7 @@ class BlueprintAdminLibrary extends BlueprintBaseLibrary
   }
 
   /**
-   * (Deprecated) Display a notification on the Pterodactyl admin panel (on next page load).
+   * (Deprecated) Display a notification on the Xcure admin panel (on next page load).
    * Available for backwards compatibility, do not use this function, use alert() instead.
    *
    * @deprecated beta-2025-09
@@ -92,7 +92,7 @@ class BlueprintAdminLibrary extends BlueprintBaseLibrary
   }
 
   /**
-   * (Deprecated) Display a notification on the Pterodactyl admin panel and refresh the page after a certain delay.
+   * (Deprecated) Display a notification on the Xcure admin panel and refresh the page after a certain delay.
    * This function will return void. Do not use this function.
    *
    * @deprecated beta-2024-12
@@ -104,7 +104,7 @@ class BlueprintAdminLibrary extends BlueprintBaseLibrary
   public function notifyAfter($delay, $text): void {}
 
   /**
-   * (Deprecated) Display a notification on the Pterodactyl admin panel and refresh the page instantly.
+   * (Deprecated) Display a notification on the Xcure admin panel and refresh the page instantly.
    * Behaves the same as calling `notifyAfter()` with a delay of zero.
    * This function will return void. Do not use this function.
    *

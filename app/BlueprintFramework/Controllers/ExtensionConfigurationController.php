@@ -1,11 +1,11 @@
 <?php
 
-namespace Pterodactyl\BlueprintFramework\Controllers;
+namespace Xcure\BlueprintFramework\Controllers;
 
-use Pterodactyl\Http\Controllers\Controller;
+use Xcure\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
-use Pterodactyl\Http\Requests\Admin\AdminFormRequest;
-use Pterodactyl\Contracts\Repository\SettingsRepositoryInterface;
+use Xcure\Http\Requests\Admin\AdminFormRequest;
+use Xcure\Contracts\Repository\SettingsRepositoryInterface;
 
 class ExtensionConfigurationController extends Controller
 {
@@ -17,8 +17,8 @@ class ExtensionConfigurationController extends Controller
   }
 
   /**
-   * @throws \Pterodactyl\Exceptions\Model\DataValidationException
-   * @throws \Pterodactyl\Exceptions\Repository\RecordNotFoundException
+   * @throws \Xcure\Exceptions\Model\DataValidationException
+   * @throws \Xcure\Exceptions\Repository\RecordNotFoundException
    */
   public function update(ExtensionConfigurationRequest $request): RedirectResponse
   {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\BlueprintFramework\Controllers;
+namespace Xcure\BlueprintFramework\Controllers;
 
-use Pterodactyl\Http\Requests\Api\Client\ClientApiRequest;
-use Pterodactyl\Http\Controllers\Api\Client\ClientApiController;
-use Pterodactyl\Contracts\Repository\SettingsRepositoryInterface;
+use Xcure\Http\Requests\Api\Client\ClientApiRequest;
+use Xcure\Http\Controllers\Api\Client\ClientApiController;
+use Xcure\Contracts\Repository\SettingsRepositoryInterface;
 
 class ExtensionRouteController extends ClientApiController
 {

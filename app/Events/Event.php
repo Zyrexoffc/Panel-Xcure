@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\Events;
+namespace Xcure\Events;
 
 abstract class Event
 {

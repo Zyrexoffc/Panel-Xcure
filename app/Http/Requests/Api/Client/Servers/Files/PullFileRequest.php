@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Http\Requests\Api\Client\Servers\Files;
+namespace Xcure\Http\Requests\Api\Client\Servers\Files;
 
-use Pterodactyl\Models\Permission;
-use Pterodactyl\Contracts\Http\ClientPermissionsRequest;
-use Pterodactyl\Http\Requests\Api\Client\ClientApiRequest;
+use Xcure\Models\Permission;
+use Xcure\Contracts\Http\ClientPermissionsRequest;
+use Xcure\Http\Requests\Api\Client\ClientApiRequest;
 
 class PullFileRequest extends ClientApiRequest implements ClientPermissionsRequest
 {

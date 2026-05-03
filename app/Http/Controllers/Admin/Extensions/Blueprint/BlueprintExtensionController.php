@@ -1,11 +1,11 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Admin\Extensions\Blueprint;
+namespace Xcure\Http\Controllers\Admin\Extensions\Blueprint;
 
-use Pterodactyl\Http\Controllers\Controller;
-use Pterodactyl\Contracts\Repository\SettingsRepositoryInterface;
+use Xcure\Http\Controllers\Controller;
+use Xcure\Contracts\Repository\SettingsRepositoryInterface;
 use Illuminate\Http\RedirectResponse;
-use Pterodactyl\Http\Requests\Admin\AdminFormRequest;
+use Xcure\Http\Requests\Admin\AdminFormRequest;
 use Database\Seeders\BlueprintSeeder;
 
 // FIXME: Move form request and remove controller.
@@ -21,8 +21,8 @@ class BlueprintExtensionController extends Controller
   }
 
   /**
-   * @throws \Pterodactyl\Exceptions\Model\DataValidationException
-   * @throws \Pterodactyl\Exceptions\Repository\RecordNotFoundException
+   * @throws \Xcure\Exceptions\Model\DataValidationException
+   * @throws \Xcure\Exceptions\Repository\RecordNotFoundException
    */
   public function update(BlueprintAdminFormRequest $request): RedirectResponse
   {

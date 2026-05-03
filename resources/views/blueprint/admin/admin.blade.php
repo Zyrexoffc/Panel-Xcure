@@ -2,10 +2,10 @@
 
 @section("blueprint.lib")
   <?php
-    use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Admin\BlueprintAdminLibrary as BlueprintExtensionLibrary;
-    use Pterodactyl\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
+    use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Admin\BlueprintAdminLibrary as BlueprintExtensionLibrary;
+    use Xcure\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
 
-    $settings = app()->make('Pterodactyl\Contracts\Repository\SettingsRepositoryInterface');
+    $settings = app()->make('Xcure\Contracts\Repository\SettingsRepositoryInterface');
     $blueprint = app()->make(BlueprintExtensionLibrary::class, ['settings' => $settings]);
     $PlaceholderService = app()->make(BlueprintPlaceholderService::class);
   ?>

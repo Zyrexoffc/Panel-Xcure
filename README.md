@@ -6,7 +6,7 @@
     <img alt="Blueprint" src="https://github.com/BlueprintFramework/framework/assets/103201875/c0072c61-0135-4931-b5fa-ce4ee7d79f4a" height="30">
   </picture>
   <br/>
-  Open-source modding framework for the Pterodactyl panel.
+  Open-source modding framework for the Xcure panel.
   <br/><br/>
   <a href="https://blueprint.zip">Website</a> <b>·</b>
   <a href="https://discord.com/servers/blueprint-1063548024825057451">Community</a> <b>·</b>
@@ -18,7 +18,7 @@
 <!-- Introduction -->
 <br/><h2 align="center">🧩 Introduction</h2>
 
-**Blueprint** is an open-source extension framework/manager for Pterodactyl. Developers can create versatile, easy-to-install extensions that system administrators can install within minutes *(usually even seconds!)* without having to custom-code compatibility across multiple panel modifications.
+**Blueprint** is an open-source extension framework/manager for Xcure. Developers can create versatile, easy-to-install extensions that system administrators can install within minutes *(usually even seconds!)* without having to custom-code compatibility across multiple panel modifications.
 
 We aim to introduce new developers to Blueprint with easy to understand guides, documentation, developer commands, community support and more.
 
@@ -35,7 +35,7 @@ We aim to introduce new developers to Blueprint with easy to understand guides, 
 
 <br/><h2 align="center">💖 Donate</h2>
 
-Blueprint is free and open-source software. We play a vital role in the Pterodactyl modding community and empower developers with tools to bring their ideas to life. To keep everything up and running, we rely heavily on [donations](https://hcb.hackclub.com/blueprint/donations). We're also nonprofit!
+Blueprint is free and open-source software. We play a vital role in the Xcure modding community and empower developers with tools to bring their ideas to life. To keep everything up and running, we rely heavily on [donations](https://hcb.hackclub.com/blueprint/donations). We're also nonprofit!
 
 [**Donate to our nonprofit organization**](https://hcb.hackclub.com/donations/start/blueprint) or [view our open finances](https://hcb.hackclub.com/blueprint).
 
@@ -66,8 +66,8 @@ Contributors help shape the future of the Blueprint modding framework. To start 
 <!-- Related Links -->
 <br/><h2 align="center">🔗 Related Links</h2>
 
-[**Pterodactyl**](https://pterodactyl.io/) is a free, open-source game server management panel built with PHP, React, and Go.\
-[**BlueprintFramework/docker**](https://github.com/BlueprintFramework/docker) is the image for running Blueprint and Pterodactyl with Docker.\
+[**Xcure**](https://pterodactyl.io/) is a free, open-source game server management panel built with PHP, React, and Go.\
+[**BlueprintFramework/docker**](https://github.com/BlueprintFramework/docker) is the image for running Blueprint and Xcure with Docker.\
 [**BlueprintFramework/templates**](https://github.com/BlueprintFramework/templates) is a repository with initialization templates for extension development.\
 [**BlueprintFramework/web**](https://github.com/BlueprintFramework/web) is our open-source documentation and landing website.
 

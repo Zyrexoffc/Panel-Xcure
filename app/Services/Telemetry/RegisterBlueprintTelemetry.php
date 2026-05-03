@@ -1,18 +1,18 @@
 <?php
 
-namespace Pterodactyl\Services\Telemetry;
+namespace Xcure\Services\Telemetry;
 
 use Ramsey\Uuid\Uuid;
 use Illuminate\Console\Scheduling\Schedule;
-use Pterodactyl\Services\Telemetry\BlueprintTelemetryCollectionService;
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
+use Xcure\Services\Telemetry\BlueprintTelemetryCollectionService;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
 
 class RegisterBlueprintTelemetry
 {
   /**
    * ¯\_(ツ)_/¯
    *
-   * @throws \Pterodactyl\Exceptions\Model\DataValidationException
+   * @throws \Xcure\Exceptions\Model\DataValidationException
    * @throws \Illuminate\Contracts\Container\BindingResolutionException
    */
   public function register(Schedule $schedule): void

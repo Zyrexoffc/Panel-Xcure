@@ -1,9 +1,9 @@
 <?php
 
-namespace Pterodactyl\Services\Servers;
+namespace Xcure\Services\Servers;
 
-use Pterodactyl\Models\Mount;
-use Pterodactyl\Models\Server;
+use Xcure\Models\Mount;
+use Xcure\Models\Server;
 
 class ServerConfigurationStructureService
 {

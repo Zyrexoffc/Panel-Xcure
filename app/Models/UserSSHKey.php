@@ -1,13 +1,13 @@
 <?php
 
-namespace Pterodactyl\Models;
+namespace Xcure\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * \Pterodactyl\Models\UserSSHKey.
+ * \Xcure\Models\UserSSHKey.
  *
  * @property int $id
  * @property int $user_id
@@ -60,7 +60,7 @@ class UserSSHKey extends Model
     ];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Pterodactyl\Models\User, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Xcure\Models\User, $this>
      */
     public function user(): BelongsTo
     {

@@ -1,22 +1,22 @@
 <?php
 
-namespace Pterodactyl\Models;
+namespace Xcure\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Query\JoinClause;
 use Znck\Eloquent\Traits\BelongsToThrough;
-use Pterodactyl\Contracts\Models\Identifiable;
+use Xcure\Contracts\Models\Identifiable;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Pterodactyl\Models\Traits\HasRealtimeIdentifier;
+use Xcure\Models\Traits\HasRealtimeIdentifier;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use Pterodactyl\Exceptions\Http\Server\ServerStateConflictException;
+use Xcure\Exceptions\Http\Server\ServerStateConflictException;
 
 /**
- * \Pterodactyl\Models\Server.
+ * \Xcure\Models\Server.
  *
  * @property int $id
  * @property string|null $external_id
@@ -46,29 +46,29 @@ use Pterodactyl\Exceptions\Http\Server\ServerStateConflictException;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property \Illuminate\Support\Carbon|null $installed_at
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\ActivityLog[] $activity
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\ActivityLog[] $activity
  * @property int|null $activity_count
  * @property Allocation|null $allocation
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\Allocation[] $allocations
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\Allocation[] $allocations
  * @property int|null $allocations_count
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\Backup[] $backups
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\Backup[] $backups
  * @property int|null $backups_count
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\Database[] $databases
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\Database[] $databases
  * @property int|null $databases_count
  * @property Egg|null $egg
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\Mount[] $mounts
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\Mount[] $mounts
  * @property int|null $mounts_count
  * @property Nest $nest
  * @property Node $node
  * @property \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
  * @property int|null $notifications_count
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\Schedule[] $schedules
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\Schedule[] $schedules
  * @property int|null $schedules_count
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\Subuser[] $subusers
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\Subuser[] $subusers
  * @property int|null $subusers_count
  * @property ServerTransfer|null $transfer
  * @property User $user
- * @property \Illuminate\Database\Eloquent\Collection|\Pterodactyl\Models\EggVariable[] $variables
+ * @property \Illuminate\Database\Eloquent\Collection|\Xcure\Models\EggVariable[] $variables
  * @property int|null $variables_count
  *
  * @method static \Database\Factories\ServerFactory factory(...$parameters)
@@ -223,7 +223,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets the user who owns the server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Pterodactyl\Models\User, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Xcure\Models\User, $this>
      */
     public function user(): BelongsTo
     {
@@ -233,7 +233,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets the subusers associated with a server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Pterodactyl\Models\Subuser, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Xcure\Models\Subuser, $this>
      */
     public function subusers(): HasMany
     {
@@ -243,7 +243,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets the default allocation for a server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne<\Pterodactyl\Models\Allocation, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne<\Xcure\Models\Allocation, $this>
      */
     public function allocation(): HasOne
     {
@@ -253,7 +253,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets all allocations associated with this server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Pterodactyl\Models\Allocation, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Xcure\Models\Allocation, $this>
      */
     public function allocations(): HasMany
     {
@@ -263,7 +263,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets information for the nest associated with this server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Pterodactyl\Models\Nest, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Xcure\Models\Nest, $this>
      */
     public function nest(): BelongsTo
     {
@@ -273,7 +273,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets information for the egg associated with this server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne<\Pterodactyl\Models\Egg, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne<\Xcure\Models\Egg, $this>
      */
     public function egg(): HasOne
     {
@@ -283,7 +283,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets information for the service variables associated with this server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Pterodactyl\Models\EggVariable, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Xcure\Models\EggVariable, $this>
      */
     public function variables(): HasMany
     {
@@ -303,7 +303,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets information for the node associated with this server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Pterodactyl\Models\Node, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Xcure\Models\Node, $this>
      */
     public function node(): BelongsTo
     {
@@ -313,7 +313,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets information for the tasks associated with this server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Pterodactyl\Models\Schedule, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Xcure\Models\Schedule, $this>
      */
     public function schedules(): HasMany
     {
@@ -323,7 +323,7 @@ class Server extends Model implements Identifiable
     /**
      * Gets all databases associated with a server.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Pterodactyl\Models\Database, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Xcure\Models\Database, $this>
      */
     public function databases(): HasMany
     {
@@ -333,7 +333,7 @@ class Server extends Model implements Identifiable
     /**
      * Returns the location that a server belongs to.
      *
-     * @return \Znck\Eloquent\Relations\BelongsToThrough<\Pterodactyl\Models\Location, \Pterodactyl\Models\Node>
+     * @return \Znck\Eloquent\Relations\BelongsToThrough<\Xcure\Models\Location, \Xcure\Models\Node>
      *
      * @throws \Exception
      */
@@ -345,7 +345,7 @@ class Server extends Model implements Identifiable
     /**
      * Returns the associated server transfer.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne<\Pterodactyl\Models\ServerTransfer, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne<\Xcure\Models\ServerTransfer, $this>
      */
     public function transfer(): HasOne
     {
@@ -353,7 +353,7 @@ class Server extends Model implements Identifiable
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Pterodactyl\Models\Backup, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany<\Xcure\Models\Backup, $this>
      */
     public function backups(): HasMany
     {
@@ -363,7 +363,7 @@ class Server extends Model implements Identifiable
     /**
      * Returns all mounts that have this server has mounted.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough<\Pterodactyl\Models\Mount, \Pterodactyl\Models\MountServer, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\HasManyThrough<\Xcure\Models\Mount, \Xcure\Models\MountServer, $this>
      */
     public function mounts(): HasManyThrough
     {
@@ -373,7 +373,7 @@ class Server extends Model implements Identifiable
     /**
      * Returns all of the activity log entries where the server is the subject.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\MorphToMany<\Pterodactyl\Models\ActivityLog, $this>
+     * @return \Illuminate\Database\Eloquent\Relations\MorphToMany<\Xcure\Models\ActivityLog, $this>
      */
     public function activity(): MorphToMany
     {

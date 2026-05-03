@@ -1,42 +1,42 @@
 <?php
 
-namespace Pterodactyl\Providers;
+namespace Xcure\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Pterodactyl\Repositories\Eloquent\EggRepository;
-use Pterodactyl\Repositories\Eloquent\NestRepository;
-use Pterodactyl\Repositories\Eloquent\NodeRepository;
-use Pterodactyl\Repositories\Eloquent\TaskRepository;
-use Pterodactyl\Repositories\Eloquent\UserRepository;
-use Pterodactyl\Repositories\Eloquent\ApiKeyRepository;
-use Pterodactyl\Repositories\Eloquent\ServerRepository;
-use Pterodactyl\Repositories\Eloquent\SessionRepository;
-use Pterodactyl\Repositories\Eloquent\SubuserRepository;
-use Pterodactyl\Repositories\Eloquent\DatabaseRepository;
-use Pterodactyl\Repositories\Eloquent\LocationRepository;
-use Pterodactyl\Repositories\Eloquent\ScheduleRepository;
-use Pterodactyl\Repositories\Eloquent\SettingsRepository;
-use Pterodactyl\Repositories\Eloquent\AllocationRepository;
-use Pterodactyl\Contracts\Repository\EggRepositoryInterface;
-use Pterodactyl\Repositories\Eloquent\EggVariableRepository;
-use Pterodactyl\Contracts\Repository\NestRepositoryInterface;
-use Pterodactyl\Contracts\Repository\NodeRepositoryInterface;
-use Pterodactyl\Contracts\Repository\TaskRepositoryInterface;
-use Pterodactyl\Contracts\Repository\UserRepositoryInterface;
-use Pterodactyl\Repositories\Eloquent\DatabaseHostRepository;
-use Pterodactyl\Contracts\Repository\ApiKeyRepositoryInterface;
-use Pterodactyl\Contracts\Repository\ServerRepositoryInterface;
-use Pterodactyl\Repositories\Eloquent\ServerVariableRepository;
-use Pterodactyl\Contracts\Repository\SessionRepositoryInterface;
-use Pterodactyl\Contracts\Repository\SubuserRepositoryInterface;
-use Pterodactyl\Contracts\Repository\DatabaseRepositoryInterface;
-use Pterodactyl\Contracts\Repository\LocationRepositoryInterface;
-use Pterodactyl\Contracts\Repository\ScheduleRepositoryInterface;
-use Pterodactyl\Contracts\Repository\SettingsRepositoryInterface;
-use Pterodactyl\Contracts\Repository\AllocationRepositoryInterface;
-use Pterodactyl\Contracts\Repository\EggVariableRepositoryInterface;
-use Pterodactyl\Contracts\Repository\DatabaseHostRepositoryInterface;
-use Pterodactyl\Contracts\Repository\ServerVariableRepositoryInterface;
+use Xcure\Repositories\Eloquent\EggRepository;
+use Xcure\Repositories\Eloquent\NestRepository;
+use Xcure\Repositories\Eloquent\NodeRepository;
+use Xcure\Repositories\Eloquent\TaskRepository;
+use Xcure\Repositories\Eloquent\UserRepository;
+use Xcure\Repositories\Eloquent\ApiKeyRepository;
+use Xcure\Repositories\Eloquent\ServerRepository;
+use Xcure\Repositories\Eloquent\SessionRepository;
+use Xcure\Repositories\Eloquent\SubuserRepository;
+use Xcure\Repositories\Eloquent\DatabaseRepository;
+use Xcure\Repositories\Eloquent\LocationRepository;
+use Xcure\Repositories\Eloquent\ScheduleRepository;
+use Xcure\Repositories\Eloquent\SettingsRepository;
+use Xcure\Repositories\Eloquent\AllocationRepository;
+use Xcure\Contracts\Repository\EggRepositoryInterface;
+use Xcure\Repositories\Eloquent\EggVariableRepository;
+use Xcure\Contracts\Repository\NestRepositoryInterface;
+use Xcure\Contracts\Repository\NodeRepositoryInterface;
+use Xcure\Contracts\Repository\TaskRepositoryInterface;
+use Xcure\Contracts\Repository\UserRepositoryInterface;
+use Xcure\Repositories\Eloquent\DatabaseHostRepository;
+use Xcure\Contracts\Repository\ApiKeyRepositoryInterface;
+use Xcure\Contracts\Repository\ServerRepositoryInterface;
+use Xcure\Repositories\Eloquent\ServerVariableRepository;
+use Xcure\Contracts\Repository\SessionRepositoryInterface;
+use Xcure\Contracts\Repository\SubuserRepositoryInterface;
+use Xcure\Contracts\Repository\DatabaseRepositoryInterface;
+use Xcure\Contracts\Repository\LocationRepositoryInterface;
+use Xcure\Contracts\Repository\ScheduleRepositoryInterface;
+use Xcure\Contracts\Repository\SettingsRepositoryInterface;
+use Xcure\Contracts\Repository\AllocationRepositoryInterface;
+use Xcure\Contracts\Repository\EggVariableRepositoryInterface;
+use Xcure\Contracts\Repository\DatabaseHostRepositoryInterface;
+use Xcure\Contracts\Repository\ServerVariableRepositoryInterface;
 
 class RepositoryServiceProvider extends ServiceProvider
 {

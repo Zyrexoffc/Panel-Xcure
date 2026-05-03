@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\BlueprintFramework;
+namespace Xcure\BlueprintFramework;
 
 use Illuminate\Console\Scheduling\Schedule;
 use File;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Pterodactyl\Console\Commands\BlueprintFramework;
+namespace Xcure\Console\Commands\BlueprintFramework;
 
 use Illuminate\Console\Command;
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
 
 class DeveloperCommand extends Command
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Http\Middleware;
+namespace Xcure\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Pterodactyl\Models\Server;
+use Xcure\Models\Server;
 
 class PanelProtectWeb
 {

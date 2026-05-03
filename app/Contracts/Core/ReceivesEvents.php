@@ -1,8 +1,8 @@
 <?php
 
-namespace Pterodactyl\Contracts\Core;
+namespace Xcure\Contracts\Core;
 
-use Pterodactyl\Events\Event;
+use Xcure\Events\Event;
 
 interface ReceivesEvents
 {

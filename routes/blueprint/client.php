@@ -1,6 +1,6 @@
 <?php
 
-use Pterodactyl\BlueprintFramework\Controllers\ExtensionRouteController;
+use Xcure\BlueprintFramework\Controllers\ExtensionRouteController;
 
 foreach (File::allFiles(__DIR__ . '/client') as $partial) {
   if ($partial->getExtension() == 'php') {

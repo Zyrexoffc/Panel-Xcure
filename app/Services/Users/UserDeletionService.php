@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Services\Users;
+namespace Xcure\Services\Users;
 
-use Pterodactyl\Models\User;
-use Pterodactyl\Models\Server;
-use Pterodactyl\Exceptions\DisplayException;
+use Xcure\Models\User;
+use Xcure\Models\Server;
+use Xcure\Exceptions\DisplayException;
 
 class UserDeletionService
 {

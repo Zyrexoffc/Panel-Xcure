@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\Http\Requests\Api\Client;
+namespace Xcure\Http\Requests\Api\Client;
 
 class GetServersRequest extends ClientApiRequest
 {

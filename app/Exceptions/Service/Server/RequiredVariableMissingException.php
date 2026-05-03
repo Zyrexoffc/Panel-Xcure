@@ -1,9 +1,9 @@
 <?php
 
-namespace Pterodactyl\Exceptions\Service\Server;
+namespace Xcure\Exceptions\Service\Server;
 
-use Pterodactyl\Exceptions\PterodactylException;
+use Xcure\Exceptions\XcureException;
 
-class RequiredVariableMissingException extends PterodactylException
+class RequiredVariableMissingException extends XcureException
 {
 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Base;
+namespace Xcure\Http\Controllers\Base;
 
 use Illuminate\View\View;
 use Illuminate\View\Factory as ViewFactory;
 use Illuminate\Http\Request;
-use Pterodactyl\Http\Controllers\Controller;
-use Pterodactyl\Contracts\Repository\ServerRepositoryInterface;
-use Pterodactyl\Models\Server;
+use Xcure\Http\Controllers\Controller;
+use Xcure\Contracts\Repository\ServerRepositoryInterface;
+use Xcure\Models\Server;
 
 class IndexController extends Controller
 {
@@ -44,9 +44,9 @@ class IndexController extends Controller
         $user = $request->user();
         
         // Try to find server by uuid or uuid_short
-        $server = \Pterodactyl\Models\Server::where('uuid', $identifier)->first();
+        $server = \Xcure\Models\Server::where('uuid', $identifier)->first();
         if (!$server) {
-            $server = \Pterodactyl\Models\Server::where('uuid_short', $identifier)->first();
+            $server = \Xcure\Models\Server::where('uuid_short', $identifier)->first();
         }
 
         // If server not found, return SPA (let it handle 404)

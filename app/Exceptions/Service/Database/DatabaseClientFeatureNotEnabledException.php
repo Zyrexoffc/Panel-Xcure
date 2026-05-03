@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Exceptions\Service\Database;
+namespace Xcure\Exceptions\Service\Database;
 
-use Pterodactyl\Exceptions\PterodactylException;
+use Xcure\Exceptions\XcureException;
 
-class DatabaseClientFeatureNotEnabledException extends PterodactylException
+class DatabaseClientFeatureNotEnabledException extends XcureException
 {
     public function __construct()
     {

@@ -21,10 +21,10 @@
  * @deprecated alpha
  */
 
-namespace Pterodactyl\Services\Helpers;
+namespace Xcure\Services\Helpers;
 
-use Pterodactyl\Contracts\Repository\SettingsRepositoryInterface;
-use Pterodactyl\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
+use Xcure\Contracts\Repository\SettingsRepositoryInterface;
+use Xcure\BlueprintFramework\Services\PlaceholderService\BlueprintPlaceholderService;
 
 class BlueprintExtensionLibrary
 {

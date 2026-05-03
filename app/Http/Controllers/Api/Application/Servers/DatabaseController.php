@@ -1,19 +1,19 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Api\Application\Servers;
+namespace Xcure\Http\Controllers\Api\Application\Servers;
 
 use Illuminate\Http\Response;
-use Pterodactyl\Models\Server;
-use Pterodactyl\Models\Database;
+use Xcure\Models\Server;
+use Xcure\Models\Database;
 use Illuminate\Http\JsonResponse;
-use Pterodactyl\Services\Databases\DatabasePasswordService;
-use Pterodactyl\Services\Databases\DatabaseManagementService;
-use Pterodactyl\Transformers\Api\Application\ServerDatabaseTransformer;
-use Pterodactyl\Http\Controllers\Api\Application\ApplicationApiController;
-use Pterodactyl\Http\Requests\Api\Application\Servers\Databases\GetServerDatabaseRequest;
-use Pterodactyl\Http\Requests\Api\Application\Servers\Databases\GetServerDatabasesRequest;
-use Pterodactyl\Http\Requests\Api\Application\Servers\Databases\ServerDatabaseWriteRequest;
-use Pterodactyl\Http\Requests\Api\Application\Servers\Databases\StoreServerDatabaseRequest;
+use Xcure\Services\Databases\DatabasePasswordService;
+use Xcure\Services\Databases\DatabaseManagementService;
+use Xcure\Transformers\Api\Application\ServerDatabaseTransformer;
+use Xcure\Http\Controllers\Api\Application\ApplicationApiController;
+use Xcure\Http\Requests\Api\Application\Servers\Databases\GetServerDatabaseRequest;
+use Xcure\Http\Requests\Api\Application\Servers\Databases\GetServerDatabasesRequest;
+use Xcure\Http\Requests\Api\Application\Servers\Databases\ServerDatabaseWriteRequest;
+use Xcure\Http\Requests\Api\Application\Servers\Databases\StoreServerDatabaseRequest;
 
 class DatabaseController extends ApplicationApiController
 {

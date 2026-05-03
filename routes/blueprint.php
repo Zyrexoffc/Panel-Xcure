@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Pterodactyl\Http\Controllers\Admin;
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
+use Xcure\Http\Controllers\Admin;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
 
 $blueprint = app()->make(BlueprintExtensionLibrary::class);
 
@@ -23,7 +23,7 @@ Route::group(['prefix' => 'extensions/blueprint'], function () {
   Route::patch('/', [Admin\Extensions\Blueprint\BlueprintExtensionController::class, 'update']);
 
   /* Extension permissions endpoint */
-  Route::patch('/config', [Pterodactyl\BlueprintFramework\Controllers\ExtensionConfigurationController::class, 'update']);
+  Route::patch('/config', [Xcure\BlueprintFramework\Controllers\ExtensionConfigurationController::class, 'update']);
 });
 
 foreach ($blueprint->extensionsConfigs() as $extension) {
@@ -32,7 +32,7 @@ foreach ($blueprint->extensionsConfigs() as $extension) {
   $controllerName = $identifier . 'ExtensionController';
   
   Route::group(['prefix' => 'extensions/' . $identifier], function () use ($identifier, $controllerName) {
-    $controllerClass = "Pterodactyl\\Http\\Controllers\\Admin\\Extensions\\{$identifier}\\{$controllerName}";
+    $controllerClass = "Xcure\\Http\\Controllers\\Admin\\Extensions\\{$identifier}\\{$controllerName}";
     
     Route::get('/', [$controllerClass, 'index'])->name("admin.extensions.{$identifier}.index");
     Route::patch('/', [$controllerClass, 'update'])->name("admin.extensions.{$identifier}.patch");

@@ -1,9 +1,9 @@
 <?php
 
-namespace Pterodactyl\Http\Requests\Api\Client\Servers\Files;
+namespace Xcure\Http\Requests\Api\Client\Servers\Files;
 
-use Pterodactyl\Models\Permission;
-use Pterodactyl\Http\Requests\Api\Client\ClientApiRequest;
+use Xcure\Models\Permission;
+use Xcure\Http\Requests\Api\Client\ClientApiRequest;
 
 class CreateFolderRequest extends ClientApiRequest
 {

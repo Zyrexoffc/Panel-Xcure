@@ -12,9 +12,9 @@
  * @since      beta
  */
 
-namespace Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Console;
+namespace Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Console;
 
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\BlueprintBaseLibrary;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\BlueprintBaseLibrary;
 
 class BlueprintConsoleLibrary extends BlueprintBaseLibrary
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\Providers\Blueprint;
+namespace Xcure\Providers\Blueprint;
 
 use Illuminate\Support\ServiceProvider;
 

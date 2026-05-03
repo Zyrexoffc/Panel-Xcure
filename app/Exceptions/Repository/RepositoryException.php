@@ -1,9 +1,9 @@
 <?php
 
-namespace Pterodactyl\Exceptions\Repository;
+namespace Xcure\Exceptions\Repository;
 
-use Pterodactyl\Exceptions\PterodactylException;
+use Xcure\Exceptions\XcureException;
 
-class RepositoryException extends PterodactylException
+class RepositoryException extends XcureException
 {
 }

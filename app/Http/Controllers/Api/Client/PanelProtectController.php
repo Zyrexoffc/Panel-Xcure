@@ -1,11 +1,11 @@
 <?php
 
-namespace Pterodactyl\Http\Controllers\Api\Client;
+namespace Xcure\Http\Controllers\Api\Client;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
-use Pterodactyl\Http\Controllers\Controller;
-use Pterodactyl\Models\Server;
+use Xcure\Http\Controllers\Controller;
+use Xcure\Models\Server;
 
 class PanelProtectController extends Controller
 {

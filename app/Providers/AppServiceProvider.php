@@ -1,8 +1,8 @@
 <?php
 
-namespace Pterodactyl\Providers;
+namespace Xcure\Providers;
 
-use Pterodactyl\Models;
+use Xcure\Models;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Pagination\Paginator;
@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
-use Pterodactyl\Extensions\Themes\Theme;
+use Xcure\Extensions\Themes\Theme;
 use Illuminate\Database\Eloquent\Relations\Relation;
 
 // Blueprint-related shenanigans imports
-use Pterodactyl\Providers\Blueprint\ExtensionfsConfigProvider;
-use Pterodactyl\Providers\Blueprint\RouteServiceProvider;
+use Xcure\Providers\Blueprint\ExtensionfsConfigProvider;
+use Xcure\Providers\Blueprint\RouteServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {

@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Pterodactyl\Http\Controllers\Base;
-use Pterodactyl\Http\Middleware\RequireTwoFactorAuthentication;
+use Xcure\Http\Controllers\Base;
+use Xcure\Http\Middleware\RequireTwoFactorAuthentication;
 
 Route::get('/server/{identifier}', [Base\IndexController::class, 'server'])->name('server.show')->middleware('panel.protect');
 Route::get('/', [Base\IndexController::class, 'index'])->name('index')->fallback();

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pterodactyl\Console\Commands\BlueprintFramework\Test;
+namespace Xcure\Console\Commands\BlueprintFramework\Test;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;

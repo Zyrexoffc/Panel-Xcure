@@ -1,10 +1,10 @@
 <?php
 
-namespace Pterodactyl\Services\Databases\Hosts;
+namespace Xcure\Services\Databases\Hosts;
 
-use Pterodactyl\Exceptions\Service\HasActiveServersException;
-use Pterodactyl\Contracts\Repository\DatabaseRepositoryInterface;
-use Pterodactyl\Contracts\Repository\DatabaseHostRepositoryInterface;
+use Xcure\Exceptions\Service\HasActiveServersException;
+use Xcure\Contracts\Repository\DatabaseRepositoryInterface;
+use Xcure\Contracts\Repository\DatabaseHostRepositoryInterface;
 
 class HostDeletionService
 {

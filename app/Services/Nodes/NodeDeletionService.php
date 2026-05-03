@@ -1,12 +1,12 @@
 <?php
 
-namespace Pterodactyl\Services\Nodes;
+namespace Xcure\Services\Nodes;
 
-use Pterodactyl\Models\Node;
+use Xcure\Models\Node;
 use Illuminate\Contracts\Translation\Translator;
-use Pterodactyl\Contracts\Repository\NodeRepositoryInterface;
-use Pterodactyl\Exceptions\Service\HasActiveServersException;
-use Pterodactyl\Contracts\Repository\ServerRepositoryInterface;
+use Xcure\Contracts\Repository\NodeRepositoryInterface;
+use Xcure\Exceptions\Service\HasActiveServersException;
+use Xcure\Contracts\Repository\ServerRepositoryInterface;
 
 class NodeDeletionService
 {

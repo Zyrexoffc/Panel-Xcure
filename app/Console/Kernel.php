@@ -1,22 +1,22 @@
 <?php
 
-namespace Pterodactyl\Console;
+namespace Xcure\Console;
 
 use Ramsey\Uuid\Uuid;
-use Pterodactyl\Models\ActivityLog;
+use Xcure\Models\ActivityLog;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Database\Console\PruneCommand;
-use Pterodactyl\Repositories\Eloquent\SettingsRepository;
+use Xcure\Repositories\Eloquent\SettingsRepository;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use Pterodactyl\Services\Telemetry\TelemetryCollectionService;
-use Pterodactyl\Console\Commands\Schedule\ProcessRunnableCommand;
-use Pterodactyl\Console\Commands\Maintenance\PruneOrphanedBackupsCommand;
-use Pterodactyl\Console\Commands\Maintenance\CleanServiceBackupFilesCommand;
+use Xcure\Services\Telemetry\TelemetryCollectionService;
+use Xcure\Console\Commands\Schedule\ProcessRunnableCommand;
+use Xcure\Console\Commands\Maintenance\PruneOrphanedBackupsCommand;
+use Xcure\Console\Commands\Maintenance\CleanServiceBackupFilesCommand;
 
 // Import Blueprint schedules, telemetry and library
-use Pterodactyl\Services\Telemetry\RegisterBlueprintTelemetry;
-use Pterodactyl\BlueprintFramework\GetExtensionSchedules;
-use Pterodactyl\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
+use Xcure\Services\Telemetry\RegisterBlueprintTelemetry;
+use Xcure\BlueprintFramework\GetExtensionSchedules;
+use Xcure\BlueprintFramework\Libraries\ExtensionLibrary\Console\BlueprintConsoleLibrary as BlueprintExtensionLibrary;
 
 class Kernel extends ConsoleKernel
 {
@@ -49,7 +49,7 @@ class Kernel extends ConsoleKernel
             $schedule->command(PruneCommand::class, ['--model' => [ActivityLog::class]])->daily();
         }
 
-        // Pterodactyl telemetry
+        // Xcure telemetry
         if (config('pterodactyl.telemetry.enabled')) {
             $this->registerTelemetry($schedule);
         }
@@ -71,7 +71,7 @@ class Kernel extends ConsoleKernel
     /**
      * I wonder what this does.
      *
-     * @throws \Pterodactyl\Exceptions\Model\DataValidationException
+     * @throws \Xcure\Exceptions\Model\DataValidationException
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     private function registerTelemetry(Schedule $schedule): void
